@@ -38,7 +38,7 @@ $key = $_GET['key']."\n";
 $hash = crc32($key);
 $partition = $hash % count($servers);
 $server = $servers[$partition];
-$qos = qos($server['host'], $server['port'], $timeout, $key);
-echo "$qos";
-//echo "Key: $key, QoS: $qos, Hash: $hash, Partition: $partition";
+//$qos = qos($server['host'], $server['port'], $timeout, $key);
+//echo "$qos";
+echo "1";
 ?>
